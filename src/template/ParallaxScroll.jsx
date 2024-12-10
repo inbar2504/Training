@@ -37,7 +37,7 @@ const ParallaxScroll = (props) => {
           תצטרך לעבור תהליך של תכנון ואישור טרם
           ביצועו
         </p>
-        <img src="./arrow.gif" id="arrow" />
+        <img src="./training/arrow.gif" id="arrow" />
       </div>
 
 
