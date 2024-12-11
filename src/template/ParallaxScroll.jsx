@@ -6,7 +6,7 @@ import Excercise from "./Excercise";
 // const Excercise = () => {
 //   return <div>הקומפוננטה הופיעה!</div>;
 // };
-
+import arrowGif from "../assets/arrow.gif";
 
 const ParallaxScroll = (props) => {
   const titles = ["מעגל הוצאת אימון",  "דקירת האימון בגרף", "חיבור האימון","תיאום שטחים","זימון מילואים","כתיבת אישור תוכניות","דרישת אמצעים","הכנת סגל","שאלות לווידוא ההבנה"];
@@ -37,7 +37,7 @@ const ParallaxScroll = (props) => {
           תצטרך לעבור תהליך של תכנון ואישור טרם
           ביצועו
         </p>
-        <img src="./training/arrow.gif" id="arrow" />
+        <img src={arrowGif} id="arrow" />
       </div>
 
 
