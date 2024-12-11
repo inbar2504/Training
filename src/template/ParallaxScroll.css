@@ -1,7 +1,6 @@
 body {
   margin: 0;
   overflow: hidden;
-  
 }
 
 .parallax-container {
@@ -10,6 +9,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  gap: 50px;
 }
 
 .parallax-title {
@@ -21,11 +21,10 @@ body {
   z-index: 10;
   letter-spacing: 2px;
   transition: all 0.5s ease;
-  color: #152A49;
+  color: #152a49;
   /* margin: 2%; */
   width: 90vw;
 }
-
 
 .parallax-section {
   scroll-snap-align: start;
@@ -38,27 +37,29 @@ body {
   text-align: center;
   background-image: url("../assets/Asset5.png");
   /* background-size: contain; */
-
+  flex-direction: column;
+  gap: 50px;
+ 
 }
 #arrow {
   height: 5%;
-  width: 11%;
-  position: absolute;
-  top: 80vh;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 10%;
+  padding: 10px;
 }
-p{
+p {
   margin: 0 0 30px 0;
   font-size: 6vmin;
   width: 90%;
   letter-spacing: 2px;
-  color: #152A49;
+  color: #152a49;
   line-height: 1.2;
 }
 #ex {
   font-size: 7vmin;
   padding: 5%;
   background-color: #00000000;
-  
+  border-radius: 10px;
+  color: #152a49;
+  border-color: #152a49;
+  border: 4px solid;
 }
