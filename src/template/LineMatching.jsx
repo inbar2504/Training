@@ -46,7 +46,7 @@ const LineMatching = () => {
     if (question5 === data.adracha) {
       setShowAnswer((prev) => ({ ...prev, question5: true }));
     }
-    if (question1 && question2 && question3 && question4 && question5) {
+    if (showAnswer.question1 && showAnswer.question2 && showAnswer.question3 && showAnswer.question4 && showAnswer.question5) {
       Swal.fire({
         title: "כל הכבוד",
         text: "סיימת את הלומדה! אתם לגמרי יכולים להיות גאים בעצמכם",
@@ -74,14 +74,13 @@ const LineMatching = () => {
         אנא בחרו עבור כל משימה את מי שתצטרכו על מנת לבצע אותה
       </Typography>
       <Box key="que1" sx={{ minWidth: 350 }}>
-        <FormControl fullWidth >
+        <FormControl fullWidth>
           <InputLabel>דרישת אמצעים</InputLabel>
           <Select
             variant="filled"
             value={question1}
             label="Age"
             onChange={(event) => setQuestion1(event.target.value)}
-            
           >
             <MenuItem className="rt" value={data.marshal}>
               {data.marshal}
@@ -101,14 +100,14 @@ const LineMatching = () => {
           </Select>
         </FormControl>
         {isClicked &&
-        (showAnswer.question1 ? (
-          <div className="feedback-answer">תשובה נכונה</div>
-        ) : (
-          <div className="feedback-answer-error">תשובה שגויה אנא נסו שנית</div>
-        ))}
+          (showAnswer.question1 ? (
+            <div className="feedback-answer">תשובה נכונה</div>
+          ) : (
+            <div className="feedback-answer-error">
+              תשובה שגויה אנא נסו שנית
+            </div>
+          ))}
       </Box>
-
-      
 
       <Box key="que2" sx={{ minWidth: 350 }}>
         <FormControl fullWidth>
@@ -137,14 +136,14 @@ const LineMatching = () => {
           </Select>
         </FormControl>
         {isClicked &&
-        (showAnswer.question2 ? (
-          <div className="feedback-answer">תשובה נכונה</div>
-        ) : (
-          <div className="feedback-answer-error">תשובה שגויה אנא נסו שנית</div>
-        ))}
+          (showAnswer.question2 ? (
+            <div className="feedback-answer">תשובה נכונה</div>
+          ) : (
+            <div className="feedback-answer-error">
+              תשובה שגויה אנא נסו שנית
+            </div>
+          ))}
       </Box>
-
-    
 
       <Box key="que3" sx={{ minWidth: 350 }}>
         <FormControl fullWidth>
@@ -173,14 +172,14 @@ const LineMatching = () => {
           </Select>
         </FormControl>
         {isClicked &&
-        (showAnswer.question3 ? (
-          <div className="feedback-answer">תשובה נכונה</div>
-        ) : (
-          <div className="feedback-answer-error">תשובה שגויה אנא נסו שנית</div>
-        ))}
+          (showAnswer.question3 ? (
+            <div className="feedback-answer">תשובה נכונה</div>
+          ) : (
+            <div className="feedback-answer-error">
+              תשובה שגויה אנא נסו שנית
+            </div>
+          ))}
       </Box>
-
-     
 
       <Box key="que4" sx={{ minWidth: 350 }}>
         <FormControl fullWidth>
@@ -209,14 +208,14 @@ const LineMatching = () => {
           </Select>
         </FormControl>
         {isClicked &&
-        (showAnswer.question4 ? (
-          <div className="feedback-answer">תשובה נכונה</div>
-        ) : (
-          <div className="feedback-answer-error">תשובה שגויה אנא נסו שנית</div>
-        ))}
+          (showAnswer.question4 ? (
+            <div className="feedback-answer">תשובה נכונה</div>
+          ) : (
+            <div className="feedback-answer-error">
+              תשובה שגויה אנא נסו שנית
+            </div>
+          ))}
       </Box>
-
-      
 
       <Box key="que5" sx={{ minWidth: 350 }}>
         <FormControl fullWidth>
@@ -245,15 +244,19 @@ const LineMatching = () => {
           </Select>
         </FormControl>
         {isClicked &&
-        (showAnswer.question5 ? (
-          <div className="feedback-answer">תשובה נכונה</div>
-        ) : (
-          <div className="feedback-answer-error">תשובה שגויה אנא נסו שנית</div>
-        ))}
+          (showAnswer.question5 ? (
+            <div className="feedback-answer">תשובה נכונה</div>
+          ) : (
+            <div className="feedback-answer-error">
+              תשובה שגויה אנא נסו שנית
+            </div>
+          ))}
       </Box>
 
       <br />
-      <button id="checkBtn" onClick={checkAnswers}>בדיקה</button>
+      <button id="checkBtn" onClick={checkAnswers}>
+        בדיקה
+      </button>
     </Box>
   );
 };
