@@ -13,8 +13,7 @@ body {
 }
 
 .parallax-title {
-  position: fixed;
-  /* top: 12%; */
+  /* position: fixed;
   left: 50%;
   transform: translateX(-50%);
   font-size: 8vmin;
@@ -22,8 +21,20 @@ body {
   letter-spacing: 2px;
   transition: all 0.5s ease;
   color: #152a49;
-  /* margin: 2%; */
+  width: 90vw; */
+
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+  color: #152a49;
   width: 90vw;
+  font-size: 8vmin;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
 }
 
 .parallax-section {
@@ -39,6 +50,7 @@ body {
   /* background-size: contain; */
   flex-direction: column;
   gap: 50px;
+  display: flex;
  
 }
 #arrow {

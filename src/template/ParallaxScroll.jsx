@@ -32,9 +32,11 @@ const ParallaxScroll = (props) => {
 
   return (
     <div className="parallax-container" onScroll={handleScroll}>
-      <h1 className="parallax-title">{activeTitle}</h1>
+      {/* <h1 className="parallax-title">{activeTitle}</h1> */}
       <div className="parallax-section">
+        
         <p>
+          <b className="parallax-title">מעגל הוצאת אימון</b><br />
           מש"ק יקר לאחר סיום הכשרתך המקצועית תיהיה מוסמך להוצאת אימונים למסלולי
           ההכשרה וליחידות השונות. לפני כל אימון שתוציא למסלול ההכשרה וליחידה
           תצטרך לעבור תהליך של תכנון ואישור טרם ביצועו
@@ -44,7 +46,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
-          {" "}
+        <b className="parallax-title">דקירת האימון בגרף</b><br />
           גרף יחידה הוא גאנט המכיל את כל מופעי היחידה אשר נקבע מראש ומאושר על
           ידי האג"ם. במידה והאימון/סיו"ש אותו אתה רוצה להוביל לא נמצא על גרף
           יחידה יש להוסיף לגרף של הפלגה את האימון (מינימום 4-5 שבועות מראש לפני
@@ -56,6 +58,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
+        <b className="parallax-title">חיבור האימון</b><br />
           לפניי התחלת עבודה על הוצאת שבוע אימון יש לקרוא את סיכום השבוע של אותו
           אימון שבוצע בעבר ולעבור על לקחים. בנוסף יש לעבור על החומר המקצועי
           ולתקף אותו במידה שיש צורך
@@ -64,7 +67,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
-          {" "}
+        <b className="parallax-title">תיאום שטחים</b><br />
           יש לבצע דרישת שטחים אל מול נציג ממחלקת התיאום. באחריות מוביל האימון
           להעביר את כלל פרטי האימון ואת השטחים הנדרשים אותם הוא מעוניין לתאם. על
           מנת לייעל את תהליך העבודה יש להגיש דרישה זו כמהנ שיותר זמן מראש
@@ -76,6 +79,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
+        <b className="parallax-title">זימון מילואים</b><br />
           לפני האימון יש להבין מהו יחס החניכה המינימלי(מופיע בהוראת האימון באתר)
           הנדרש להוצאת אימון אידיאלית. במידה ויש צורך בזימון מילואים, יש לשלוח
           דרישת מילואים ע"פ פורמט של מחלקת האג"מ (מינימום שבוע וחצי לפני ביצוע
@@ -86,6 +90,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
+        <b className="parallax-title">כתיבת אישור תוכניות</b><br />
           לכל שבוע אימון שיוצא ביחידה נדרש לכתוב אישור תוכניות ולאשר אותו כשבוע
           מראש אצל מפל"ג ההדרכה/אימונים ביחידה. אין שבוע אימון שיוצא ללא אישור
           של התוכניות לששבוע,נוכחות של מוביל האימון ומפקד האימון היא הכרחית.יש
@@ -95,6 +100,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
+        <b className="parallax-title">דרישת אמצעים</b><br />
           על מנת לקבל את כל הציוד הנדרש לאימון יש למלא פורמט דרישות אמצעים של
           מחלקת המרש"ל בהתאם לתכנון מתווה האימון,המנהלת,כמות האנשים וכו. את
           הקובץ יש להגיש עד יום ג' שבועיים לפניי מועד האימון(לשלוח במייל למשקית
@@ -107,6 +113,7 @@ const ParallaxScroll = (props) => {
 
       <div className="parallax-section">
         <p>
+        <b className="parallax-title">הכנת סגל</b><br />
           על מנת שכלל סגל ההדרכה יגיע לאימון עם רמת הידע הנדרשת וידעו מהם
           ההישגים הנדרשים מאותו שבוע אימון יש לבצע הכנת סגל של כלל הסגל המשתתף
           באימון - מדריכות/ מילואימניקים/ מפקד-אימון כאשר המשקית המבוילה היא
@@ -115,6 +122,7 @@ const ParallaxScroll = (props) => {
       </div>
 
       <div className="parallax-section">
+      <b className="parallax-title">שאלות לווידוא ההבנה</b><br />
         <button id="ex" onClick={() => props.setShowBook(true)}>
           יאללה לתרגול
         </button>
