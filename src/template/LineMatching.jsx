@@ -303,6 +303,11 @@ const LineMatching = () => {
         text: "סיימת את הלומדה! אתם לגמרי יכולים להיות גאים בעצמכם",
         icon: "success",
         heightAuto: false,
+        confirmButtonText: "סגור",
+      }).then((result) => {
+        if (result.isConfirmed) {
+      window.location.reload()
+        }      
       });
     }
   }, [showAnswer]); // מאזין לשינויים ב-showAnswer
@@ -329,9 +334,9 @@ const LineMatching = () => {
   const data = {
     marshal: "מרשל",
     tium: "מחלקת תיאום",
-    agam: "קצין אג'ם",
-    hamal: "חמל ביה'ס",
-    adracha: "מפל'ג הדרכה/מפקד ביהס"
+    agam: 'קצין אג"מ',
+    hamal: 'חמל ביה"ס',
+    adracha: 'מפל"ג הדרכה/מפקד ביה"ס'
   };
   const subjects = ["דרישת אמצעים", "תיאום שטחים", "גרף בית הספר", "זימון מילואים", "הצגת אישור תוכניות"];
   return (
